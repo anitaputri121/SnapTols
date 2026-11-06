@@ -1,0 +1,110 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/tools-api/api/ampreset/"
+  to = "/.netlify/functions/nexadev/api/ampreset/"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/tools-api/api/ampreset"
+  to = "/.netlify/functions/nexadev/api/ampreset"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/tikwm"
+  to = "/.netlify/functions/tikwm"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/nexadev/*"
+  to = "/.netlify/functions/api-nexadev/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/media-api/*"
+  to = "/.netlify/functions/api-nexadev/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/nexadev/*"
+  to = "/.netlify/functions/nexadev/:splat"
+  status = 200
+  force = true
+
+# Semua panggilan API nexadev lewat fungsi server, yang menambahkan kunci dari
+# variabel lingkungan ANITA_API_KEY (kunci tidak pernah dikirim ke browser).
+[[redirects]]
+  from = "/tools-api/*"
+  to = "/.netlify/functions/nexadev/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/anime-api/*"
+  to = "/.netlify/functions/apii/:splat"
+  status = 200
+  force = true
+
+
+# Downloader baru (api.zapi.ink): kunci dari variabel lingkungan NITA_API_KEY.
+[[redirects]]
+  from = "/zapi-api/*"
+  to = "/.netlify/functions/zapi/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/zapi-file/*"
+  to = "/.netlify/functions/zapi-file/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/apii/*"
+  to = "/.netlify/functions/apii/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/clooud/*"
+  to = "/.netlify/functions/clooud/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/cleanuri"
+  to = "/.netlify/functions/cleanuri"
+  status = 200
+  force = true
+
+
+[[redirects]]
+  from = "/api/spotify"
+  to = "/.netlify/functions/spotify"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/lyrics"
+  to = "/.netlify/functions/lyrics"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

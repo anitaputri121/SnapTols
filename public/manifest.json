@@ -1,0 +1,16 @@
+{
+  "short_name": "SnapTool",
+  "name": "SnapTool",
+  "icons": [
+    {
+      "src": "/assets/aistudio/0bccde96a0fd5264aa10453cdfbe7f70_587ca20b.jpg",
+      "type": "image/jpeg",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#f5ecd7",
+  "theme_color": "#e53935",
+  "display": "standalone",
+  "orientation": "portrait"
+}

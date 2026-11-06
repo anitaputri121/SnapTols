@@ -1,0 +1,15 @@
+# Semua panggilan API nexadev lewat fungsi server Netlify. Fungsi itulah yang menambahkan
+# kunci API (variabel lingkungan ANITA_API_KEY), jadi kunci tidak pernah dikirim ke browser.
+# Aturan ini harus ada SEBELUM aturan SPA (/*) di paling bawah.
+/tools-api/api/ampreset/ /.netlify/functions/nexadev/api/ampreset/ 200!
+/tools-api/api/ampreset /.netlify/functions/nexadev/api/ampreset 200!
+/api/tikwm /.netlify/functions/tikwm 200!
+/api/spotify /.netlify/functions/spotify 200!
+/api/lyrics /.netlify/functions/lyrics 200!
+/media-api/* /.netlify/functions/api-nexadev/:splat 200!
+/tools-api/* /.netlify/functions/nexadev/:splat 200!
+/anime-api/* /.netlify/functions/apii/:splat 200!
+/zapi-api/* /.netlify/functions/zapi/:splat 200!
+/zapi-file/* /.netlify/functions/zapi-file/:splat 200!
+/image-api/* https://clooud.my.id/:splat 200!
+/* /index.html 200

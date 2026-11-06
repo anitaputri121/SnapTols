@@ -1,0 +1,8 @@
+{
+  "name": "SnapTools",
+  "description": "SnapTools - Aplikasi Multi Fungsi dengan unduhan langsung, pemutar musik Spotify, DramaBox VIP, pemutar media dalam aplikasi, dan ZIP extractor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

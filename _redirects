@@ -1,0 +1,12 @@
+/zapi-api/* /.netlify/functions/zapi/:splat 200!
+/zapi-file/* /.netlify/functions/zapi-file/:splat 200!
+# Semua panggilan API nexadev lewat fungsi server Netlify (kunci dari ANITA_API_KEY).
+/tools-api/api/ampreset/ /.netlify/functions/nexadev/api/ampreset/ 200!
+/tools-api/api/ampreset /.netlify/functions/nexadev/api/ampreset 200!
+/api/tikwm /.netlify/functions/tikwm 200!
+/api/chat /.netlify/functions/chat 200
+/media-api/* /.netlify/functions/api-nexadev/:splat 200!
+/tools-api/* /.netlify/functions/nexadev/:splat 200!
+/anime-api/* /.netlify/functions/apii/:splat 200!
+/image-api/* https://clooud.my.id/:splat 200!
+/* /index.html 200
